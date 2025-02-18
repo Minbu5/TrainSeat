@@ -4,3 +4,26 @@
 # Make small app that could be run on multiple platforms mobile android
 # that can tell you where is your seat is at window, in the middle or at passage
 # For layout of seats in train see picture in train layout.png
+
+
+def seat_position(seat):
+
+    window_seats = []
+    for num in range (1,55):
+       if num % 6 == 0:
+           window_seats.append(num - 5)
+           window_seats.append(num)
+
+    middle_seats = []
+    for num in range (1,55):
+        if (num-2)%3 ==  0:
+            middle_seats.append(num)
+
+    if seat in window_seats:
+        print("You have window seat")
+    elif seat in middle_seats:
+        print("You have middle seat")
+    else:
+        print("You have edge seat")
+
+seat_position(23)
