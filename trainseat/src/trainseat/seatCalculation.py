@@ -20,6 +20,12 @@ def seat_position(seat):
         if (num-2)%3 ==  0:
             middle_seats.append(num)
 
+    edge_seats = []
+    for num in range (1,55):
+       if num % 3 == 0:
+           edge_seats.append(num)
+           edge_seats.append(num + 1)
+
     if seat in window_seats:
         print("You have window seat")
     elif seat in middle_seats:
@@ -27,4 +33,3 @@ def seat_position(seat):
     else:
         print("You have edge seat")
 
-seat_position(23)
