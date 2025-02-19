@@ -1,4 +1,8 @@
 # created by virtualenv automatically
 .venv/
 .idea/
-trainseat\.gitignore
+/trainseat/.gitignore
+/trainseat/src/trainseat.dist-info/INSTALLER
+/trainseat/src/trainseat.dist-info/METADATA
+/trainseat/src/trainseat.dist-info/top_level.txt
+/trainseat/src/trainseat.dist-info/WHEEL
