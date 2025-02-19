@@ -5,6 +5,7 @@
 # that can tell you where is your seat: is at window, in the middle or at passage
 # For layout of seats in train see picture in train layout.png and coupe numbering logic in coupe layout.png
 
+# Perhaps it's possible to make app that shows your seat on the picture coupe blank.png??
 
 def seat_position(seat):
 
